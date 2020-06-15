@@ -1,0 +1,18 @@
+body {
+    background-image: url('11.jpg');
+}
+
+.base {
+    background-color: rgb(214, 241, 199, 0.9);
+    width: 70%;
+    position: relative;
+    margin: 50px 200px;
+}
+
+.ex h2 {
+    padding: 0px 45px;
+}
+
+.ex p {
+    padding: 10px 90px;
+}

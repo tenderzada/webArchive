@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>任务1</h1>
+    <p>Before</p>
+    <p id='before'></p>
+    <p>删除第二个元素后</p>
+    <p id='after'></p>
+
+    <h1>任务2</h1>
+    <p>取代前</p>
+    <p id='test1'></p>
+    <p>取代后</p>
+    <p id='test2'></p>
+
+    <h1>任务4</h1>
+    <p id='time'></p>
+
+    <script>
+        //任务1
+        var names = new Array(10);
+        for (i = 0; i < 10; i++) {
+            names[i] = i;
+        }
+        document.getElementById('before').innerHTML = names;
+        delete names[1];
+        document.getElementById('after').innerHTML = names;
+
+        //2.
+        var school = "云南大学软件学院"
+        document.getElementById('test1').innerHTML = school;
+        document.getElementById('test2').innerHTML = school.replace("云南大学软件学院", "JavaScript编程语言");
+
+        //3.
+        window.confirm("确定框");
+        window.alert("警告框")
+        window.prompt("信息提示提示框", "defaultText");
+
+        //4.
+        function print_time() {
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }
+        window.setInterval(print_time, 1000)
+    </script>
+</body>
+
+</html>

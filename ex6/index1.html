@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS基础</title>
+    <!-- <link rel="stylesheet" href="style1.css" type="text/css" /> -->
+</head>
+<style>
+    /*标签选择器*/
+    
+    p {
+        color: #f00;
+    }
+    /*标签选择器*/
+    
+    p2 {
+        color: rgb(24, 24, 253);
+    }
+    /*id选择器*/
+    
+    #id_test {
+        font-size: larger;
+    }
+    /*类选择器*/
+    
+    .class_test {
+        font-style: italic;
+    }
+    /*属性选择器*/
+    
+    p2[class="class_test"] {
+        background: blue;
+    }
+    /*子元素选择器*/
+    
+    div>p2 {
+        color: #000;
+    }
+</style>
+
+<body>
+    <p>你好，欢迎学习CSS基础知识</p>
+    <div class="class_">
+        <p2 id="id_test" class='class_test'>It's a beautiful day.<br>Finally a good weather today.</p2>
+    </div>
+
+</body>
+
+</html>

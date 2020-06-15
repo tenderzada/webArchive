@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务2</title>
+</head>
+
+<body>
+    <div style="width: 500px;height: 500px;padding: 200px; padding-left: 100px;">
+        <label for="">账号</label>
+        <input type="text" onmouseover="change1(this)" onmouseout="change2(this)">
+        <br>
+        <label for="">密码</label>
+        <input type="text" onfocus="change1(this)" onmouseout="change2(this)">
+        <br>
+        <br>
+        <input type="text" name="" id="demo" style="width: 200px;height: 100px;">
+        <label for="">点击下拉框选择颜色</label>
+        <select name="color" id="color">
+            <option value="">请选择颜色</option>
+            <option value="red">红色</option>
+            <option value="green">绿色</option>
+            <option value="yellow">黄色</option>
+        </select>
+    </div>
+    <script>
+        function change1(id) {
+            id.style.background = "blue";
+        }
+
+        function change2(id) {
+            id.style.background = "white";
+        }
+        let color = document.getElementById("color");
+        color.onchange = function() {
+            document.getElementById("demo").style.background = this.value;
+        }
+    </script>
+</body>
+
+</html>
